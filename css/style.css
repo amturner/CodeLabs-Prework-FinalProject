@@ -82,9 +82,15 @@ form fieldset {
 
 input {
     border: none;
+    outline: none;
     border-bottom: 2px solid #2b2d42;
     background-color: #edf2f4;
     height: 2em;
+}
+
+input:focus {
+    transform: scale(1.1);
+    border: 2px solid #ef233c;
 }
 
 .mad-lib {
