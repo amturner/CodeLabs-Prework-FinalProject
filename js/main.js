@@ -19,12 +19,21 @@ const story = `My friends and I started a secret club! We meet every day by the 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    madLibDisplay.innerHTML = story
+    // Validate that form inputs contain text
+    !adj1.value ? alert("You have not entered the first adjective!")
+    : !noun.value ? alert("You have not entered a noun!")
+    : !adj2.value ? alert("You have not entered the second adjective!")
+    : !clothing.value ? alert("You have not entered an item of clothing!")
+    : !bodyPart.value ? alert("You have not entered a body part!")
+    : !verb.value ? alert("You have not entered a verb!")
+    : !food.value ? alert("You have not entered a food item!")
+    // Display mad lib story when all inputs have text
+    : madLibDisplay.innerHTML = story
         .replace(`${adj1}`, adj1.value)
         .replace(`${noun}`, noun.value)
         .replace(`${adj2}`, adj2.value)
         .replace(`${clothing}`, clothing.value)
         .replace(`${bodyPart}`, bodyPart.value)
         .replace(`${verb}`, verb.value)
-        .replace(`${food}`, food.value)
+        .replace(`${food}`, food.value);
 });
