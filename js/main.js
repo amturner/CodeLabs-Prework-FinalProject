@@ -28,10 +28,11 @@ form.addEventListener("submit", (event) => {
     : !bodyPart.value ? (alert("You have not entered a body part!"), bodyPart.focus())
     : !verb.value ? (alert("You have not entered a verb!"), verb.focus())
     : !food.value ? (alert("You have not entered a food item!"), food.focus())
-    // Display mad lib story when all inputs have text
+    // Display the mad lib story when all inputs have text
     : displayMadLibStory();
 });
 
+// Function for displaying the mad lib story
 displayMadLibStory = () => {
     madLibDisplay.innerHTML = story
     .replace(`${adj1}`, adj1.value)
