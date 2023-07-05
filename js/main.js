@@ -28,12 +28,16 @@ form.addEventListener("submit", (event) => {
     : !verb.value ? (alert("You have not entered a verb!"), verb.focus())
     : !food.value ? (alert("You have not entered a food item!"), food.focus())
     // Display mad lib story when all inputs have text
-    : madLibDisplay.innerHTML = story
-        .replace(`${adj1}`, adj1.value)
-        .replace(`${noun}`, noun.value)
-        .replace(`${adj2}`, adj2.value)
-        .replace(`${clothing}`, clothing.value)
-        .replace(`${bodyPart}`, bodyPart.value)
-        .replace(`${verb}`, verb.value)
-        .replace(`${food}`, food.value);
+    : displayMadLibStory();
 });
+
+displayMadLibStory = () => {
+    madLibDisplay.innerHTML = story
+    .replace(`${adj1}`, adj1.value)
+    .replace(`${noun}`, noun.value)
+    .replace(`${adj2}`, adj2.value)
+    .replace(`${clothing}`, clothing.value)
+    .replace(`${bodyPart}`, bodyPart.value)
+    .replace(`${verb}`, verb.value)
+    .replace(`${food}`, food.value);
+};
