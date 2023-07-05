@@ -8,7 +8,7 @@ const verb = document.querySelector("#verb");
 const food = document.querySelector("#food");
 
 // Display Mad Lib
-const madLibDisplay = document.querySelector(".mad-lib");
+const madLibDisplay = document.querySelector(".madLibsForm__p");
 
 // Form
 const form = document.querySelector("form");
@@ -32,6 +32,12 @@ form.addEventListener("submit", (event) => {
     : displayMadLibStory();
 });
 
+form.addEventListener("reset", () => {
+    // Clear mad lib story from paragraph
+    //Text inputs automatically cleared by the "reset" action
+    clearMadLibStory();
+});
+
 // Function for displaying the mad lib story
 displayMadLibStory = () => {
     madLibDisplay.innerHTML = story
@@ -42,4 +48,9 @@ displayMadLibStory = () => {
     .replace(`${bodyPart}`, bodyPart.value)
     .replace(`${verb}`, verb.value)
     .replace(`${food}`, food.value);
+};
+
+// Function for clearing the mad lib story
+clearMadLibStory = () => {
+    madLibDisplay.innerHTML = "";
 };

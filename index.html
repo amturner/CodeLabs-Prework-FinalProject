@@ -8,43 +8,43 @@
     <script defer src="js/main.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1 class="center">Mad Libs</h1>
     </header>
 
-    <main>
-        <article class="container madLibsForm">
+    <main class="main">
+        <article class="main__article madLibsForm">
             <h3 class="center">Fill out the form to see your Mad Lib!</h3>
             <hr>
             <form class="madLibsForm__form">
                 <fieldset class="madLibsForm__fieldset">
                     <legend class="offscreen">Fill out the form to see your Mad Lib!</legend>
                     <section class="madLibsForm__section">
-                        <label for="adj1">Adjective:</label>
+                        <label class="madLibsForm__label" for="adj1">Adjective:</label>
                         <input class="madLibsForm__input" type="text" name="adj1" id="adj1">
                     </section>
                     <section class="madLibsForm__section">
-                        <label for="noun">Noun:</label>
+                        <label class="madLibsForm__label"for="noun">Noun:</label>
                         <input class="madLibsForm__input" type="text" name="noun" id="noun">
                     </section>
                     <section class="madLibsForm__section">
-                        <label for="adj2">Adjective:</label>
+                        <label class="madLibsForm__label"for="adj2">Adjective:</label>
                         <input class="madLibsForm__input" type="text" name="adj2" id="adj2">
                     </section>
                     <section class="madLibsForm__section">
-                        <label for="clothing">Clothing:</label>
+                        <label class="madLibsForm__label"for="clothing">Clothing:</label>
                         <input class="madLibsForm__input" type="text" name="clothing" id="clothing">
                     </section>
                     <section class="madLibsForm__section">
-                        <label for="bodyPart">Body Part:</label>
+                        <label class="madLibsForm__label"for="bodyPart">Body Part:</label>
                         <input class="madLibsForm__input" type="text" name="bodyPart" id="bodyPart">
                     </section>
                     <section class="madLibsForm__section">
-                        <label for="verb">Verb:</label>
+                        <label class="madLibsForm__label"for="verb">Verb:</label>
                         <input class="madLibsForm__input" type="text" name="verb" id="verb">
                     </section>
                     <section class="madLibsForm__section">
-                        <label for="food">Food:</label>
+                        <label class="madLibsForm__label"for="food">Food:</label>
                         <input class="madLibsForm__input" type="text" name="food" id="food">
                     </section>
                 </fieldset>
@@ -52,11 +52,11 @@
                 <button class="madLibsForm__button madLibsForm__button--reset" id="reset" type="reset">Reset</button>
             </form>
             <hr>
-            <p class="mad-lib"></p>
+            <p class="madLibsForm__p"></p>
         </article>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p class="footer__p center">
             Codefi Code Labs Prework Final Project<br>
             (Made by <a href="https://github.com/amturner/CodeLabs-Prework-FinalProject" target="_blank">Alexander Turner</a> - <date datetime="2023-07-05">5th July 2023</date>)
