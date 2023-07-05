@@ -96,6 +96,11 @@ hr {
     margin-top: 1em;
 }
 
+/* HEADER */
+.header__a:hover {
+    text-decoration: none;
+}
+
 /* MAIN */
 .main__article {
     background-color: var(--BG-LIGHT-COLOR);
@@ -139,6 +144,7 @@ hr {
 }
 
 .madLibsForm__button {
+    cursor: pointer;
     border: none;
     background-color: var(--INPUT-BG-COLOR);
     color: var(--BTN-TXT-COLOR);
