@@ -20,13 +20,13 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     // Validate that form inputs contain text
-    !adj1.value ? alert("You have not entered the first adjective!")
-    : !noun.value ? alert("You have not entered a noun!")
-    : !adj2.value ? alert("You have not entered the second adjective!")
-    : !clothing.value ? alert("You have not entered an item of clothing!")
-    : !bodyPart.value ? alert("You have not entered a body part!")
-    : !verb.value ? alert("You have not entered a verb!")
-    : !food.value ? alert("You have not entered a food item!")
+    !adj1.value ? (alert("You have not entered the first adjective!"), adj1.focus())
+    : !noun.value ? (alert("You have not entered a noun!"), noun.focus())
+    : !adj2.value ? (alert("You have not entered the second adjective!"), adj2.focus())
+    : !clothing.value ? (alert("You have not entered an item of clothing!"), clothing.focus())
+    : !bodyPart.value ? (alert("You have not entered a body part!"), bodyPart.focus())
+    : !verb.value ? (alert("You have not entered a verb!"), verb.focus())
+    : !food.value ? (alert("You have not entered a food item!"), food.focus())
     // Display mad lib story when all inputs have text
     : madLibDisplay.innerHTML = story
         .replace(`${adj1}`, adj1.value)
