@@ -17,6 +17,7 @@ const form = document.querySelector("form");
 const story = `My friends and I started a secret club! We meet every day by the <b>${adj1} ${noun}</b>. Our club has some very special rules. If you want to join, you have to wear a <b>${adj2} ${clothing}</b> on your <b>${bodyPart}</b>. You are not allowed to <b>${verb}</b> during meetings, and you can only eat <b>${food}</b> for your meals. If you are interested in joining, let me know!`;
 
 form.addEventListener("submit", (event) => {
+    // Prevent default form behaviour
     event.preventDefault();
 
     // Validate that form inputs contain text
