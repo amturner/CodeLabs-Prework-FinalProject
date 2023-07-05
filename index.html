@@ -11,11 +11,12 @@
     <header>
         <h1 class="center">Mad Libs</h1>
     </header>
+
     <main>
-        <article class="container">
+        <article class="container madLibsForm">
             <h3 class="center">Fill out the form to see your Mad Lib!</h3>
             <hr>
-            <form class="madLibsForm">
+            <form class="madLibsForm__form">
                 <fieldset class="madLibsForm__fieldset">
                     <legend class="offscreen">Fill out the form to see your Mad Lib!</legend>
                     <section class="madLibsForm__section">
@@ -46,13 +47,20 @@
                         <label for="food">Food:</label>
                         <input class="madLibsForm__input" type="text" name="food" id="food">
                     </section>
-                    <button class="madLibsForm__button" id="submit" type="submit">Submit</button>
-                    <!--<button class="reset" id="reset" type="reset">Reset</button>-->
                 </fieldset>
+                <button class="madLibsForm__button madLibsForm__button--submit" id="submit" type="submit">Submit</button>
+                <button class="madLibsForm__button madLibsForm__button--reset" id="reset" type="reset">Reset</button>
             </form>
             <hr>
             <p class="mad-lib"></p>
         </article>
     </main>
+
+    <footer>
+        <p class="footer__p center">
+            Codefi Code Labs Prework Final Project<br>
+            (Made by <a href="https://github.com/amturner/CodeLabs-Prework-FinalProject" target="_blank">Alexander Turner</a> - <date datetime="2023-07-05">5th July 2023</date>)
+        </p>
+    </footer>
 </body>
 </html>
