@@ -9,48 +9,48 @@
 </head>
 <body>
     <header>
-        <h1 style="text-align: center">Mad Libs</h1>
+        <h1 class="center">Mad Libs</h1>
     </header>
     <main>
         <article class="container">
-            <h3 style="text-align: center">Fill out the form to see your Mad Lib!</h3>
-            <hr style="margin-top: 1em">
-            <form>
-                <fieldset>
-                    <div class="form-group">
+            <h3 class="center">Fill out the form to see your Mad Lib!</h3>
+            <hr>
+            <form class="madLibsForm">
+                <fieldset class="madLibsForm__fieldset">
+                    <legend class="offscreen">Fill out the form to see your Mad Lib!</legend>
+                    <section class="madLibsForm__section">
                         <label for="adj1">Adjective:</label>
-                        <input type="text" name="adj1" id="adj1">
-                    </div>
-                    <div class="form-group">
+                        <input class="madLibsForm__input" type="text" name="adj1" id="adj1">
+                    </section>
+                    <section class="madLibsForm__section">
                         <label for="noun">Noun:</label>
-                        <input type="text" name="noun" id="noun">
-                    </div>
-                    <div class="form-group">
+                        <input class="madLibsForm__input" type="text" name="noun" id="noun">
+                    </section>
+                    <section class="madLibsForm__section">
                         <label for="adj2">Adjective:</label>
-                        <input type="text" name="adj2" id="adj2">
-                    </div>
-                    <div class="form-group">
+                        <input class="madLibsForm__input" type="text" name="adj2" id="adj2">
+                    </section>
+                    <section class="madLibsForm__section">
                         <label for="clothing">Clothing:</label>
-                        <input type="text" name="clothing" id="clothing">
-                    </div>
-                    <div class="form-group">
+                        <input class="madLibsForm__input" type="text" name="clothing" id="clothing">
+                    </section>
+                    <section class="madLibsForm__section">
                         <label for="bodyPart">Body Part:</label>
-                        <input type="text" name="bodyPart" id="bodyPart">
-                    </div>
-                    <div class="form-group">
+                        <input class="madLibsForm__input" type="text" name="bodyPart" id="bodyPart">
+                    </section>
+                    <section class="madLibsForm__section">
                         <label for="verb">Verb:</label>
-                        <input type="text" name="verb" id="verb">
-                    </div>
-                    <div class="form-group">
+                        <input class="madLibsForm__input" type="text" name="verb" id="verb">
+                    </section>
+                    <section class="madLibsForm__section">
                         <label for="food">Food:</label>
-                        <input type="text" name="food" id="food">
-                    </div>
-                    <button class="submit" id="submit" type="submit">Submit</button>
+                        <input class="madLibsForm__input" type="text" name="food" id="food">
+                    </section>
+                    <button class="madLibsForm__button" id="submit" type="submit">Submit</button>
                     <!--<button class="reset" id="reset" type="reset">Reset</button>-->
                 </fieldset>
             </form>
-
-            <hr style="margin-top: 1em">
+            <hr>
             <p class="mad-lib"></p>
         </article>
     </main>
